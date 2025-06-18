@@ -3,12 +3,11 @@ import { generatePath } from "react-router-dom";
 
 export const StarBackground = () => {
     const [stars, setStars] = useState([]);
-  const [meteors, setMeteors] = useState([]);
+
 
   useEffect(() => {
     generateStars();
-    generateMeteors();
-
+  
     const handleResize = () => {
       generateStars();
     };
