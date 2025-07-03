@@ -7,8 +7,8 @@ import { Menu, X } from "lucide-react";
 const navItems = [
     {name: "Home", href: "#hero"},
     {name: "About", href: "#about"},
-    {name: "Skills", href: "#skills"},
-    {name: "Projects", href: "#projects"},
+    {name: "Web", href: "#webprojects"},
+    {name: "UI", href: "#projects"},
     {name: "Contact", href: "#contact"}
 ]
 
@@ -18,7 +18,7 @@ export const NavBar =()=> {
 
     useEffect(()=>{
         const handleScroll = () => {
-            setIsScrolled(window.screenY> 10)
+            setIsScrolled(window.scrollY > 10)
         }
 
         window.addEventListener("scroll", handleScroll);
@@ -27,9 +27,10 @@ export const NavBar =()=> {
     }, [])
 
     return (
-        <nav className={cn("fixed w-full z-40 transition-all duration-300", isScrolled ? "py-3 bg-background/8- backdrop blur-md shdow-xs" : "py-5")}> 
+        <nav className={cn("fixed w-full z-40 transition-all duration-300", isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5")}> 
+
             <div className="container flex items-center justify-between">
-                <a className="text-xl font bold text-primary flex items-center"  href="#hero">
+                <a className="text-xl font bold text-primary flex items-center"  href="#hero"> 
                     <span className="relative z-10">
                         {" "}
                         <span className="text-glow text-foreground"> Ernesse Berlin</span> Portfolio
@@ -77,7 +78,7 @@ export const NavBar =()=> {
                         >
                             {item.name}
                         </a>
-                        ))}
+                        ))}s
                     </div>
                     </div>
                 </div>
