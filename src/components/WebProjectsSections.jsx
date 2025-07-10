@@ -1,7 +1,5 @@
-import { Description } from "@radix-ui/react-toast"
 import { ArrowRight, ExternalLink } from "lucide-react"
 import Image2 from "../assets/img/image-2.png"
-
 
 
 const webProjects = [
@@ -62,32 +60,40 @@ export const WebProjectsSection =()=>{
                                         </span>
                                     ))}
                                 </div>
-                            </div>
+                            
 
-                            <h3 className="text-xl font-semibold mb-1">
-                                {webProjects.title}
-                            </h3>
-                            <p className="text-muted-foreground text-sm mb-4">
-                                {webProjects.description}
-                            </p>
+                                <h3 className="text-xl font-semibold mb-1">
+                                    {webProjects.title}
+                                </h3>
+                                <p className="text-muted-foreground text-sm mb-4">
+                                    {webProjects.description}
+                                </p>
 
-                            <div className="flex justify-between items-center">
-                                <div className="flex space-x-3">
-                                    <a href={webProjects.demoUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                                        <ExternalLink size={20} />
-                                    </a>
+                                <div className="flex justify-center items-center">
+                                    <div className="flex items-center">
+                                        {/* <a href={webProjects.demoUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                                            <ExternalLink size={20} />
+                                        </a> 
+                                        
+                                        <a href={webProjects.githubUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                                            <ExternalLink size={20} />
+                                        </a>
+                                        */}
 
-                                    <a href={webProjects.githubUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                                        <ExternalLink size={20} />
-                                    </a>
+                                        <a
+                                            href="#contact"
+                                            className="cosmic-button">
+                                                View Project
+                                        </a>  
+
+                                        
+                                    </div>
                                 </div>
-                            </div>
-                        </div> 
-                        
+                            </div> 
+                        </div>
                     ))}
                  </div>
             </div>
-
             <div className="text-center mt-12">
                     <a className="cosmic-button w-fit flex items-center mx-auto gap-2" target="_blank" href="https://github.com/berlinernesse">Check My GitHub <ArrowRight size={16} />
                     </a>

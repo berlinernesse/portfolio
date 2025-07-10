@@ -4,7 +4,8 @@ import { NavBar } from "../components/NavBar"
 import { HeroSection } from "../components/HeroSection"
 import { AboutSection } from "../components/AboutSection"
 import { WebProjectsSection } from "../components/WebProjectsSections"
-
+import { UIProjectSection } from "../components/UIProjectSection"
+import { ContactSection } from "../components/ContactSection"
 
 
 export const Home =()=> {
@@ -25,14 +26,9 @@ export const Home =()=> {
             <HeroSection />
             <AboutSection />
             <WebProjectsSection />
-
-            {/*
-            
-          
             <UIProjectSection />
-            
             <ContactSection />
-            */}
+    
 
         </main>
 
